@@ -587,11 +587,9 @@ void init_3D_viewer(int va) {
 	glutSpecialFunc(object_special_viewerKey);
 }
 #ifdef W32
-#ifdef DEBUG
 int main() {
 	return WinMain(GetModuleHandle(NULL), NULL, GetCommandLineA(), SW_SHOWNORMAL);
 }
-#endif
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd) {
 	return main_start(__argc, __argv);
 }
